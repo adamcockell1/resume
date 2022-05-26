@@ -1,0 +1,156 @@
+% ------------------------------------------
+% Resume in Latex
+% Authors: Jake Gutierrez and Sourabh Bajaj
+% Adapted from: https://github.com/sb2nov/resume
+% License: MIT
+% ------------------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+% ------------------------------------------
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{5pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% ------------------------------------------
+%%%%%%%%%%%%%% CV STARTS HERE %%%%%%%%%%%%%%
+
+\begin{document}
+
+% -----------------HEADING------------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Adam Cockell} & \href{mailto:adam.cockell1@gmail.com}{Email: adam.cockell1@gmail.com} \\
+  \href{https://github.com/adamcockell1}{https://github.com/adamcockell1} & Phone: +1 (819) 639 7331 \\
+\end{tabular*} \\~\\
+
+% ----------------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen's University}{Kingston, Ontario}
+      {Bachelor of Computing - Software Design (Honors)}{Sep 2019 - Present}
+
+    \resumeSubItem{Term GPA}{4.0}
+      \hfill
+      \textbf{Cumulative GPA}{: 3.6}
+
+    \resumeSubItem{Relevant courses}
+      {Software Quality Assurance, Data Structures, Programming Paradigms, Algorithms, Software Specifications, Artificial Intelligence}
+
+    \resumeSubheading
+      {Ashbury College}{Ottawa, Ontario}
+      {International Baccalaureate, OSSD, Ashbury Diploma}{Sep 2015 - May 2019}
+  \resumeSubHeadingListEnd
+
+% ----------------EXPERIENCE----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen's University}{Kingston, ON}
+      {Teaching Assistant}{Jan 2022 - May 2022}
+      \resumeItemListStart
+        \resumeItem{Computer Architecture}
+          {Graded assignments and quizzes on C, Assembly, and low-level CPU operations for a group of 30 students, and held bi-weekly office hours.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Queen's University}{Kingston, ON}
+      {Incoming Student Mentor}{Sep 2021 - Dec 2021}
+      \resumeItemListStart
+        \resumeItem{Mentorship}
+          {Offered guidance, answered questions, and helped engage an incoming computer science student with the Queen's community. Gave advice on choosing a degree program at the end of first year, all through 1-on-1 meetings.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Queen's University}{Kingston, ON}
+      {Orientation Leader}{May 2021 - Sep 2021}
+      \resumeItemListStart
+        \resumeItem{O-week}
+          {As leader for a group of 3 other volunteers, I was responsible for planning and coordinating activities, team debrief, and reporting to the orientation committee for a group of 20 incoming students.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% ----------------PROJECTS------------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{RGB Shades GUI}
+      {Cross-platform graphical user interface for fully customizable lighting on RGB-LED matrix glasses written in C/C++ using Qt Creator.}
+  \resumeSubHeadingListEnd
+
+% -----------------SKILLS-------------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, C, Java, C++, Haskell}
+      \hfill
+      \textbf{Software}{: VSCode, Qt Creator, Git, MS Suite}
+  \resumeSubHeadingListEnd
+
+% ------------------------------------------
+\end{document}
